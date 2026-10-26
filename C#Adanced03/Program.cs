@@ -57,6 +57,15 @@ internal class Program
         //}
         #endregion
 
+        #region Predicate
+        //ProductCatalog productCatalog = new ProductCatalog();
+        //List<Product> products = productCatalog.GetProducts();
+        //List<Product> filteredList = ReportGenerator.FilterProducts(products, p => p.Stock < 20);
+        //foreach (Product product in filteredList)
+        //{
+        //    Console.WriteLine($"[LOW STOCK] {product.Name}: only {product.Stock} left!");
+        //}
+        #endregion
     }
     public static void PrintProducts(List<Product> products)
     {

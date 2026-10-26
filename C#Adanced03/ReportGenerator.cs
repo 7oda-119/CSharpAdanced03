@@ -32,6 +32,21 @@ internal class ReportGenerator
 
     }
 
+    public static List<Product> FilterProducts(List<Product> products, Predicate<Product> filterPredicate)
+    {
+        List<Product> result = [];
+        if (products is not null && products.Count > 0)
+        {
+            foreach (Product product in products)
+            {
+                if (filterPredicate.Invoke(product))
+                    result.Add(product);
+            }
+            return result;
+        }
+        return default!;
+    }
+
     #endregion
 
 }
