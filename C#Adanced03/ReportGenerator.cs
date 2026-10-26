@@ -18,4 +18,20 @@ internal class ReportGenerator
     }
     #endregion
 
+    #region Func
+    public static List<string> TransformProducts(List<Product> products, Func<Product, string> transformFunc)
+    {
+        List<string> result = [];
+        if (products is not null && products.Count > 0)
+        {
+            foreach (Product product in products)
+                result.Add(transformFunc.Invoke(product));
+            return result;
+        }
+        return default!;
+
+    }
+
+    #endregion
+
 }

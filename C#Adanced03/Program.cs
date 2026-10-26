@@ -47,6 +47,16 @@ internal class Program
         //ReportGenerator.GenerateReport(products, longReport);
         #endregion
 
+        #region Func
+        //ProductCatalog productCatalog = new ProductCatalog();
+        //List<Product> products = productCatalog.GetProducts();
+        //List<string> transformList = ReportGenerator.TransformProducts(products, p => $"{p.Name} (${p.Price})");
+        //foreach (string product in transformList)
+        //{
+        //    Console.WriteLine(product);
+        //}
+        #endregion
+
     }
     public static void PrintProducts(List<Product> products)
     {
