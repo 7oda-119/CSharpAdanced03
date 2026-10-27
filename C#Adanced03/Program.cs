@@ -91,6 +91,29 @@ internal class Program
         //List<string> gradeStrings = grades.Select(g => $"Grade: {g}").ToList();  // grades.Select => return IEnumerable so we use .ToList to convert to list
         //Console.WriteLine(string.Join(", ", gradeStrings));                      // Print the list with formate Grade: g
         #endregion
+
+        #region Exercise 6: Browser History (Undo)
+        ////"google.com", "github.com", "stackoverflow.com", "youtube.com", "claude.ai"
+        //Stack<string> browserHistory = new ();                       // LIFO
+        //browserHistory.Push("google.com");                           
+        //browserHistory.Push("github.com");                           
+        //browserHistory.Push("stackoverflow.com");                    
+        //browserHistory.Push("youtube.com");                          
+        //browserHistory.Push("claude.ai");                            // The top element
+        //Console.WriteLine(string.Join(", ", browserHistory));        
+                                                                       
+        //Console.WriteLine(browserHistory.Peek());                    // Return the last element => claude.ai
+                                                                       
+        //Console.WriteLine(browserHistory.Pop());                     // Pop the last element => claude.ai
+        //Console.WriteLine(browserHistory.Pop());                     // Pop the last element => youtube.com
+        //Console.WriteLine(browserHistory.Pop());                     // Pop the last element => stackoverflow.com
+        //Console.WriteLine(browserHistory.Peek());                    // Return the last element => github.com
+                                                                       
+        //Stack<string> emptyHistory = new();                          // Create empty stack
+        //Console.WriteLine(emptyHistory.TryPop(out string page));     // Pop on an empty stack trow an exception. TryPop() does not throw an exception. It returns false and sets the output variable to its default value
+
+
+        #endregion
     }
     public static void PrintProducts(List<Product> products)
     {
