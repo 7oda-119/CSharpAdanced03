@@ -4,50 +4,10 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        #region Smart Product Search
-        //ProductCatalog productCatalog = new ProductCatalog();
-        //List<Product> products = productCatalog.GetProducts();
 
-        //ProductFilterDelegate productFilter = ProductSearch.IsElectronic;
-        //List<Product> electronicProducts = ProductSearch.SearchProducts(products, productFilter);
-        //Console.WriteLine("--- Electronics ---");
-        //PrintProducts(electronicProducts);
-        //Console.WriteLine("\n========================================\n");
-
-        //ProductFilterDelegate cheapFilter = ProductSearch.IsCheaper;
-        //List<Product> cheapProducts = ProductSearch.SearchProducts(products, cheapFilter);
-        //Console.WriteLine("--- Under $50 ---");
-        //PrintProducts(cheapProducts);
-        //Console.WriteLine("\n========================================\n");
-
-        //ProductFilterDelegate inStockFilter = ProductSearch.IsInStock;
-        //List<Product> inStock = ProductSearch.SearchProducts(products, inStockFilter);
-        //Console.WriteLine("--- In Stock ---");
-        //PrintProducts(inStock);
-        //Console.WriteLine("\n========================================\n");
-
-        //ProductFilterDelegate clothingUnder100Filter = ProductSearch.IsCheapClothing;
-        //List<Product> clothingUnder100 = ProductSearch.SearchProducts(products, clothingUnder100Filter);
-        //Console.WriteLine("--- Clothing Under $100 ---");
-        //PrintProducts(clothingUnder100); 
-        #endregion
-
-        #region Custom Report Generator
-        //ProductCatalog productCatalog = new ProductCatalog();
-        //List<Product> products = productCatalog.GetProducts();
-
-        //Console.WriteLine("--- Short Report ---");
-        //Action<Product> shortReport = ReportGenerator.PrintShortReport;
-        //ReportGenerator.GenerateReport(products, shortReport);
-
-        //Console.WriteLine("\n========================================\n");
-
-        //Console.WriteLine("--- Long Report ---");
-        //Action<Product> longReport = ReportGenerator.PrintLongReport;
-        //ReportGenerator.GenerateReport(products, longReport);
-        #endregion
-
-        #region Func
+        #region Advanced 02
+        #region Task 03 : Custom Report Generator
+        #region 3.2. Transform Products 
         //ProductCatalog productCatalog = new ProductCatalog();
         //List<Product> products = productCatalog.GetProducts();
         //List<string> transformList = ReportGenerator.TransformProducts(products, p => $"{p.Name} (${p.Price})");
@@ -57,7 +17,7 @@ internal class Program
         //}
         #endregion
 
-        #region Predicate
+        #region 3.3. Filter Products 
         //ProductCatalog productCatalog = new ProductCatalog();
         //List<Product> products = productCatalog.GetProducts();
         //List<Product> filteredList = ReportGenerator.FilterProducts(products, p => p.Stock < 20);
@@ -66,6 +26,11 @@ internal class Program
         //    Console.WriteLine($"[LOW STOCK] {product.Name}: only {product.Stock} left!");
         //}
         #endregion
+
+        #endregion
+        #endregion
+
+        #region Advanced 03
 
         #region Exercise 1: Student Grade Manager
         //List<int> grades = [85, 92, 78, 95, 88, 70, 100, 65];
@@ -101,17 +66,19 @@ internal class Program
         //browserHistory.Push("youtube.com");                          
         //browserHistory.Push("claude.ai");                            // The top element
         //Console.WriteLine(string.Join(", ", browserHistory));        
-                                                                       
+
         //Console.WriteLine(browserHistory.Peek());                    // Return the last element => claude.ai
-                                                                       
+
         //Console.WriteLine(browserHistory.Pop());                     // Pop the last element => claude.ai
         //Console.WriteLine(browserHistory.Pop());                     // Pop the last element => youtube.com
         //Console.WriteLine(browserHistory.Pop());                     // Pop the last element => stackoverflow.com
         //Console.WriteLine(browserHistory.Peek());                    // Return the last element => github.com
-                                                                       
+
         //Stack<string> emptyHistory = new();                          // Create empty stack
         //Console.WriteLine(emptyHistory.TryPop(out string page));     // Pop on an empty stack trow an exception. TryPop() does not throw an exception. It returns false and sets the output variable to its default value
 
+
+        #endregion 
 
         #endregion
     }
