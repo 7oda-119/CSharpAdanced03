@@ -1,34 +1,12 @@
-﻿namespace C_Adanced03;
+﻿using System.Reflection.Metadata;
+using System.Xml.Linq;
+
+namespace C_Adanced03;
 
 internal class Program
 {
     static void Main(string[] args)
     {
-
-        #region Advanced 02
-        #region Task 03 : Custom Report Generator
-        #region 3.2. Transform Products 
-        //ProductCatalog productCatalog = new ProductCatalog();
-        //List<Product> products = productCatalog.GetProducts();
-        //List<string> transformList = ReportGenerator.TransformProducts(products, p => $"{p.Name} (${p.Price})");
-        //foreach (string product in transformList)
-        //{
-        //    Console.WriteLine(product);
-        //}
-        #endregion
-
-        #region 3.3. Filter Products 
-        //ProductCatalog productCatalog = new ProductCatalog();
-        //List<Product> products = productCatalog.GetProducts();
-        //List<Product> filteredList = ReportGenerator.FilterProducts(products, p => p.Stock < 20);
-        //foreach (Product product in filteredList)
-        //{
-        //    Console.WriteLine($"[LOW STOCK] {product.Name}: only {product.Stock} left!");
-        //}
-        #endregion
-        #endregion
-        #endregion
-
         #region Advanced 03
 
         #region Exercise 1: Student Grade Manager
@@ -69,6 +47,122 @@ internal class Program
         //Console.WriteLine(string.Join(", ", gradeStrings));                         // Print the list with formate Grade: g
         #endregion
 
+        #region Exercise 2: Leaderboard
+        //SortedDictionary<int, string> sortedDictionary = new()
+        //{   { 500, "Ahmed" },
+        //    { 200, "Sara" },
+        //    { 800, "Ali" },
+        //    { 350, "Mona" }
+        //};
+
+        //foreach (var elemnt in sortedDictionary)
+        //    Console.WriteLine($"{elemnt.Key} => \"{elemnt.Value}\"");
+
+        //Console.WriteLine("First key: " + sortedDictionary.Keys.First());
+        //Console.WriteLine("First value: " + sortedDictionary.Values.First());
+
+        //Console.WriteLine("Contains score 500 ? " + sortedDictionary.ContainsKey(500));
+
+        //if(sortedDictionary.TryGetValue(999, out string value))
+        //    Console.WriteLine("The score 999: " + value);
+        //else
+        //    Console.WriteLine("The value of score 999 not found.");
+
+        //sortedDictionary.Remove(200);
+        //foreach (var elemnt in sortedDictionary)
+        //    Console.WriteLine($"{elemnt.Key} => \"{elemnt.Value}\"");
+
+        #endregion
+
+        #region Exercise 3: Phone Book
+        //Dictionary<string, string> contacts = new();
+
+        //contacts["Ahmed"] = "01012345";
+        //contacts["Ali"] = "01123456";
+        //contacts["Mohamed"] = "01598765";
+        //contacts["Ali"] = "01057345";
+
+        //try
+        //{
+        //    contacts.Add("Ali", "01234567890");
+        //}
+        //catch (Exception ex)
+        //{
+        //    Console.WriteLine(ex);
+        //}
+
+        //string addingContact = contacts.TryAdd("Omar", "01234567890") ? "Suceeded." : "Failed.";
+        //Console.WriteLine("\nadding {Omar, 01234567890} " + addingContact);
+
+        //string searshingFor = "Ziad";
+        //if (contacts.ContainsKey(searshingFor))
+        //    Console.WriteLine($"The phonenumber of {searshingFor}: {contacts[searshingFor]}");
+        //else
+        //    Console.WriteLine($"The phonenumber of {searshingFor}: doesn’t exist.");
+
+        //string phoneNumber = contacts.GetValueOrDefault(searshingFor, "Not found.");
+        //Console.WriteLine($"{searshingFor}'s phone: " + phoneNumber);
+
+        //Console.WriteLine("Keys: " + string.Join(", ", contacts.Keys));
+        //Console.WriteLine("Values: " + string.Join(", ", contacts.Values));
+
+        #endregion
+
+        #region Exercise 4: Unique Email Validator
+        //HashSet<string> hashEmails = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+        //hashEmails.Add("ahmed@test.com");
+        //hashEmails.Add("AHMED@test.com");
+        //hashEmails.Add("sara@test.com");
+        //hashEmails.Add("Sara@Test.Com");
+
+        //Console.WriteLine("Count: " + hashEmails.Count);   // because HashSet stores only unique values, and the StringComparer.OrdinalIgnoreCase ignore case-sensitivity of letters
+        //HashSet<int> A = [1, 2, 3, 4, 5];
+        //HashSet<int> B = [4, 5, 6, 7, 8];
+
+        //HashSet<int> union = new HashSet<int>(A);
+        //union.UnionWith(B);
+        //Console.WriteLine("UnionWith: " + string.Join(", ", union));
+
+        //HashSet<int> intersect = new HashSet<int>(A);
+        //intersect.IntersectWith(B);
+        //Console.WriteLine("IntersectWith: " + string.Join(", ", intersect));
+
+        //HashSet<int> except = new HashSet<int>(A);
+        //except.ExceptWith(B);
+        //Console.WriteLine("ExceptWith: " + string.Join(", ", except));
+
+        //HashSet<int> subset = [ 1, 2 ];
+        //Console.WriteLine("IsSubsetOf: " + subset.IsSubsetOf(A));
+
+        #endregion
+
+        #region Exercise 5: Print Queue Simulator
+
+        //Queue<string> documentQueue = new();
+
+        //documentQueue.Enqueue("Report.pdf");
+        //documentQueue.Enqueue("Invoice.pdf");
+        //documentQueue.Enqueue("Letter.docx");
+        //documentQueue.Enqueue("Resume.pdf");
+        //documentQueue.Enqueue("Photo.jpg");
+
+        //Console.WriteLine("Print queue: " + string.Join(", ", documentQueue));
+
+        //Console.WriteLine("Count: " + documentQueue.Count);
+
+        //Console.WriteLine("Next Document: " + documentQueue.Peek());
+
+        //Console.WriteLine($"Printing {documentQueue.Dequeue()}");
+
+        //Queue<string> emptyQueue = new();
+        //if(emptyQueue.TryDequeue(out string output))        // return true if there are elements and set the value of the next element in out parameter, and else if there are no any element in the queue
+        //    Console.WriteLine($"Printing: {emptyQueue}");
+        //else
+        //    Console.WriteLine("Queue is empty. No document to print.");
+
+        #endregion
+
         #region Exercise 6: Browser History (Undo)
         //Stack<string> browserHistory = new();    // LIFO
 
@@ -98,7 +192,7 @@ internal class Program
 
         //Stack<string> emptyHistory = new();
         //Console.WriteLine("TryPop the last element in empty stack: " + emptyHistory.TryPop(out string page));     // Pop on an empty stack trow an exception. TryPop() does not throw an exception. It returns false and sets the output variable to its default value
-        #endregion 
+        #endregion
 
         #endregion
     }
