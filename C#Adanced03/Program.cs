@@ -11,40 +11,40 @@ internal class Program
 
         #region Exercise 1: Student Grade Manager
         //List<int> grades = [85, 92, 78, 95, 88, 70, 100, 65];
-        //Console.WriteLine("Grades = " + string.Join(", ", grades));              // Print grades
+        //Console.WriteLine("Grades = " + string.Join(", ", grades));              
 
-        //Console.WriteLine("Count = " + grades.Count);                            // Print count of elements
-        //Console.WriteLine("The first grade = " + grades[0]);                     // Print the first grade
-        //Console.WriteLine("The last grade = " + grades[^1]);                     // Print the lase grade
-
-        //PrintSpace();
-
-        //grades.Sort();                                                            // Sort the grades
-        //Console.WriteLine("After sorting : " + string.Join(", ", grades));        // Print grades after sorting
+        //Console.WriteLine("Count = " + grades.Count);                            
+        //Console.WriteLine("The first grade = " + grades[0]);                     
+        //Console.WriteLine("The last grade = " + grades[^1]);                     
 
         //PrintSpace();
 
-        //List<int> gradesAbove90 = grades.FindAll(g => g > 90);                               // Find the grades greater than 90
-        //Console.WriteLine("Grades greater than 90" + string.Join(", ", gradesAbove90));      // Print the grades greater than 90
+        //grades.Sort();                                                           
+        //Console.WriteLine("After sorting : " + string.Join(", ", grades));       
 
         //PrintSpace();
 
-        //List<int> gradesUnder75 = grades.FindAll(g => g < 75);                            // Find the grades less than 75
-        //Console.WriteLine("Grades less than 75" + string.Join(", ", gradesUnder75));      // Print the grades less than 75
+        //List<int> gradesAbove90 = grades.FindAll(g => g > 90);                              
+        //Console.WriteLine("Grades greater than 90" + string.Join(", ", gradesAbove90));     
 
         //PrintSpace();
 
-        //grades.RemoveAll(g => g < 75);                                                          // Remove the failing grade
-        //Console.WriteLine("Grades after removing the failing" + string.Join(", ", grades));     // Print grades after removing the failing
+        //List<int> gradesUnder75 = grades.FindAll(g => g < 75);                            
+        //Console.WriteLine("Grades less than 75" + string.Join(", ", gradesUnder75));      
 
         //PrintSpace();
 
-        //Console.WriteLine("Does any degree equal 100? " + grades.Contains(100));      // Check if any grade equals 100
+        //grades.RemoveAll(g => g < 75);                                                          
+        //Console.WriteLine("Grades after removing the failing" + string.Join(", ", grades));     
+
+        //PrintSpace();
+
+        //Console.WriteLine("Does any degree equal 100? " + grades.Contains(100));      
 
         //PrintSpace();
 
         //List<string> gradeStrings = grades.Select(g => $"Grade: {g}").ToList();     // grades.Select => return IEnumerable so we use .ToList to convert to list
-        //Console.WriteLine(string.Join(", ", gradeStrings));                         // Print the list with formate Grade: g
+        //Console.WriteLine(string.Join(", ", gradeStrings));                         
         #endregion
 
         #region Exercise 2: Leaderboard
