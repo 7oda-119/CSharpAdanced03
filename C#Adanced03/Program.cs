@@ -176,17 +176,17 @@ internal class Program
 
         //PrintSpace();
 
-        //Console.WriteLine("The last element: " + browserHistory.Peek());       // Return the last element => claude.ai
+        //Console.WriteLine("The last element: " + browserHistory.Peek());     
 
         //PrintSpace();
 
-        //Console.WriteLine("The first pop: " + browserHistory.Pop());          // Pop the last element => claude.ai
-        //Console.WriteLine("The second pop: " + browserHistory.Pop());         // Pop the last element => youtube.com
-        //Console.WriteLine("The third pop: " + browserHistory.Pop());          // Pop the last element => stackoverflow.com
+        //Console.WriteLine("The first pop: " + browserHistory.Pop());      
+        //Console.WriteLine("The second pop: " + browserHistory.Pop());   
+        //Console.WriteLine("The third pop: " + browserHistory.Pop());       
 
         //PrintSpace();
 
-        //Console.WriteLine("Access the last element after pops: " + browserHistory.Peek());   // Return the last element => github.com
+        //Console.WriteLine("Access the last element after pops: " + browserHistory.Peek());   
 
         //PrintSpace();
 
